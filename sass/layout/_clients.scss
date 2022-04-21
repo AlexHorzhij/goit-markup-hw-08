@@ -1,0 +1,31 @@
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.client{
+    flex-basis: calc((100% - 30px * 2)/2);
+    margin: 15px;
+}
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 210px;
+    height: 92px;
+    border: 1px solid var(--social-and-client);
+    border-radius: 4px;
+    fill: var(--social-and-client);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-text-color);
+        border-color: var(--accent-text-color);
+    }
+}
+.client__item {
+    max-width: 106px;
+    max-height: 60px;
+}
