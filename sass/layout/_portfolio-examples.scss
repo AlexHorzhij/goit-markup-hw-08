@@ -1,13 +1,25 @@
-// .examples-list {
-//     display: flex;
-//     position: relative;
-//     flex-wrap: wrap;
-//     margin: -15px;
-// }
+.examples-list {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin: -15px;
+        @media screen and (min-width: 768px) {
+    }
+}
 
 .examples-card {
-    // flex-basis: calc((100% - 90px) / 3);
-    margin-bottom: 30px;
+    flex-basis: 100%;
+    margin: 15px;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 60px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px){
+            flex-basis: calc((100% - 90px) / 3);
+            margin: 15px;
+    }
 }
 
 .examples-card__title {

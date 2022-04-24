@@ -22,70 +22,96 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
+  <!-- HEADER -->
+
   <body>
     <header class="header">
-      <div class="container header-container">
-        <a data-menu-open>
-          <svg class="heder-burger">
-            <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
-          </svg>
-        </a>
-
-        <a class="logo link" href="./"><span class="logo__color">Web</span>Studio</a>
-        <div class="menu-mobile is-hidden" data-menu>
-          <a data-menu-close>
-            <svg class="mobile-close">
-              <use href="./images/svg/symbol-defs.svg#icon-close-menu"></use>
-            </svg>
-          </a>
-
-          <nav class="main-nav">
-            <ul class="header-list list menu-phone__list">
-              <li class="header-list__item">
-                <a href="./index.html" class="header-list__link link current">Студия</a>
-              </li>
-              <li class="header-list__item">
-                <a href="./portfolio.html" class="header-list__link link">Портфолио</a>
-              </li>
-              <li class="header-list__item">
-                <a href="" class="header-list__link link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="mobile-contact">
-            <a href="mailto:info@devstudio.com" class="contact-mail link">
-              <svg class="contact-mail__icon">
-                <use href="./images/svg/symbol-defs.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-            <a href="tel:+380961111111" class="link contact-phone">
-              <svg class="contact-phone__icon">
-                <use href="./images/svg/symbol-defs.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </div>
-          <ul class="mobile-social">
-            <li class="mobile-social__item list">
-              <a href="" class="link mobile-social__link">Instagram</a>
+      <div class="container header__container">
+        <nav class="main-nav">
+          <a class="logo link" href="./"><span class="logo__color">Web</span>Studio</a>
+          <ul class="header-list list">
+            <li class="header-list__item">
+              <a href="./index.html" class="header-list__link link">Студия</a>
             </li>
-            <li class="mobile-social__item list">
-              <a href="" class="link mobile-social__link">Twitter</a>
+            <li class="header-list__item">
+              <a href="./portfolio.html" class="header-list__link link current">Портфолио</a>
             </li>
-            <li class="mobile-social__item list">
-              <a href="" class="link mobile-social__link">Facebook</a>
-            </li>
-            <li class="mobile-social__item list">
-              <a href="" class="link mobile-social__link">LinkedIn</a>
+            <li class="header-list__item">
+              <a href="" class="header-list__link link">Контакты</a>
             </li>
           </ul>
+        </nav>
+        <div class="header-contact">
+          <a href="mailto:info@devstudio.com" class="contact-mail link">
+            <svg class="contact-mail__icon">
+              <use href="./images/svg/symbol-defs.svg#envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a href="tel:+380961111111" class="link contact-phone">
+            <svg class="contact-phone__icon">
+              <use href="./images/svg/symbol-defs.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </div>
+        <button type="button" class="header__burger-btn" data-menu-open>
+          <svg class="header__burger-icon" width="40px" height="40px">
+            <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <!-- MOBILE MENU -->
+
+        <div class="mobile-menu is-hidden" data-menu>
+          <div class="mobile-menu__container">
+            <button type="button" class="mobile-menu__btn">
+              <svg class="mobile-menu__close" width="40" height="40" data-menu-close>
+                <use href="./images/svg/symbol-defs.svg#icon-close-menu"></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu__nav-list list">
+              <li class="mobile-menu__nav-item">
+                <a href="./index.html" class="mobile-menu__link link">Студия</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="./portfolio.html" class="mobile-menu__link link mobile-menu__link-current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="" class="mobile-menu__link link">Контакты</a>
+              </li>
+            </ul>
+            <a href="tel:+380961111111" class="link mobile-menu-phone"> +38 096 111 11 11</a>
+            <a href="mailto:info@devstudio.com" class="mobile-menu-mail link">
+              info@devstudio.com</a
+            >
+
+            <ul class="mobile-social">
+              <li class="mobile-social__item list">
+                <a href="" class="link mobile-social__link">Instagram</a>
+              </li>
+              <li class="mobile-social__item list">
+                <a href="" class="link mobile-social__link">Twitter</a>
+              </li>
+              <li class="mobile-social__item list">
+                <a href="" class="link mobile-social__link">Facebook</a>
+              </li>
+              <li class="mobile-social__item list">
+                <a href="" class="link mobile-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
     <main>
+      <!-- BUTTON SELECT -->
+
       <section class="section">
-        <div class="container">
+        <div class="container container__btn-select">
           <h2 class="visually-hidden">Примеры работ</h2>
           <ul class="list btn-select-list">
             <li class="btn-select-list__item">
@@ -104,7 +130,11 @@
               <button class="btn-select" type="button">Маркетинг</button>
             </li>
           </ul>
+        </div>
 
+        <!-- EXAMPLES -->
+
+        <div class="container">
           <ul class="list examples-list">
             <li class="examples-card">
               <a href="" class="link examples-card__link">
@@ -291,6 +321,9 @@
         </div>
       </section>
     </main>
+
+    <!-- FOOTER -->
+
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer-contacts">

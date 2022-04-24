@@ -24,17 +24,34 @@
 }
 
 .btn-select-list {
-    justify-content: flex-start;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
+    justify-content: flex-start;
+    margin: -8px -4px;  
+    
+        @media screen and (min-width: 768px) {
+            margin: 0 -4px;
+            justify-content: center;
+        }
+}
+
+.container__btn-select{
     margin-bottom: 40px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
+
 }
 
-.btn-select-list__item{
-    margin-bottom: 15px;
-}
+.btn-select-list__item {
+    margin: 8px 4px;
 
-.btn-select-list__item:not(:last-child) {
-    margin-right: 8px;
+    @media screen and (min-width: 768px){
+        margin: 0 4px;
+    } 
 }
