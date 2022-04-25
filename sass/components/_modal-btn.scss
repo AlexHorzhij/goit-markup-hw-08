@@ -32,13 +32,11 @@
     @media screen and (max-width: 480px) {
         width: calc(100% - 60px);
         min-width: 290px;
-        overflow: auto;
     }
 
     @media screen and (max-width: 380px) {
         width: 100%;
         min-width: 320px;
-        // overflow: auto;
     }
 
     @media screen and (min-width: 1200px) {
