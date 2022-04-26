@@ -1,4 +1,8 @@
 .mobile-menu{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; 
+
     position: fixed;
     top: 0;
     left: 0;
@@ -12,6 +16,15 @@
         min-width: 320px;
         overflow: auto;
     }
+
+    @media screen and (max-width: 767px) {
+        &.is-open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+    }
+
 }
 
 .mobile-menu__container{
