@@ -119,6 +119,7 @@ img {
 }
 
 .overlay {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -132,10 +133,7 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
   width: 450px;
   height: 609px;
   background-color: var(--lite-text-one);
@@ -161,6 +159,21 @@ img {
   .modal {
     width: 528px;
     height: 581px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .modal {
+    position: relative;
+  }
+}
+
+@media screen and (min-height: 601px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
